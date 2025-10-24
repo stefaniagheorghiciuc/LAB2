@@ -3,7 +3,9 @@
     public class BookCategory
     {
         public int ID { get; set; }
-        public string CategoryName { get; set; }
-        public ICollection<BookCategory>? BookCategories { get; set; }
+        public int BookID { get; set; }
+        public Book Book { get; set; }
+        public int CategoryID { get; set; }
+        public Category Category { get; set; }
     }
 }
